@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500;900&family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Quiz Game!</title>
+    </head>
+    <body>
+        <!--PAGE CONTAINER-->
+        <div class="Page-Container">
+            <!--MAIN PAGE'S TOP BAR-->
+            <header>
+                <!--MAIN PAGE'S TITLE-->
+                <h1>Coding Quiz</h1>
+            </header>
+            <!--TIMER COUNTDOWN-->
+            <div class="Timer">
+                <!--DISPLAY TIMER COUNTDOWN-->
+            </div>
+
+            <!--MAIN PAGE'S QUIZ CONTENT-->
+            <div class="Main-Start-Page">
+                <!--MAIN PAGE'S SUBTITLE-->
+                <h2>A test of your basic coding knowledge</h2>
+                <!--MAIN PAGE'S INTRODUCTION-->
+                <p class="Game-Intro">This coding quiz follows a multiple-choice questions format. You will be given 120 seconds to answer all of the questions. For every question answered incorrectly, 15 seconds will be deducted from the timer. The quiz will end once all of the questions have been answered or the timer runs out. You will then be asked to enter your initials, which will be associated to your score that gets recorded. The top 10 scores will be recorded in the Leaderboard.</p>
+                <!--MAIN PAGE'S INSTRUCTIONS-->
+                <p class="Click-Start">Click START to begin.</p>
+                <!--MAIN PAGE'S START QUIZ BUTTON-->
+                <button type="button" class="Start-Quiz-Button">START</button>
+            </div>
+
+            <!--QUIZ QUESTION PAGE-->
+            <div class="Questions-Page">
+                <!--DISPLAYS QUESTION-->
+                <h3 class="Question"></h3>
+                <!--DISPLAYS ANSWER CHOICES-->
+                <ul class="Answer-Choices"></ul>
+                <!--DISPLAYS WHETHER OR NOT PLAYER ANSWERED CORRECTLY-->
+                <p class="Answer-Response"></p>
+            </div>
+
+            <!--QUIZ RESULTS PAGES-->
+            <!--FINISHED IN TIME QUIZ RESULTS PAGE-->
+            <div class="Results-Finished" style="display: none">
+                <h3 class="Finished-Quiz">Congratulations on finishing the quiz!</h3>
+                <p class="Quiz-Score-Finished"></p>
+                <br>
+                <p class="Leaderboard-Instructions">To add your score to the Leaderboard, input your initials below:</p>
+                <!--ADD INITIALS TO LEADERBOARD-->
+                <div class="Leaderboard-Initials" style="display: none">
+                    <label for="Initials-Input"></label>
+                    <input type="text" placeholder="Enter Your Initials" id="Initials-Input">
+                    <button class="Submit-Score-Button">Submit Score</button>
+                </div>
+                <div class="Finished-Return-Home">
+                <!--RETURN TO MAIN PAGE-->
+                <button class="Return-Home-Button">Return to Main Page</button>
+                </div>
+            </div>
+
+            <!--QUIZ RESULTS PAGE FOR RAN OUT OF TIME-->
+            <div class="Results-Failed" style="display: none">
+                <h3 class="Failed-Quiz">Better luck next time!</h3>
+                <p class="Quiz-Score-Failed"></p>
+                <p class="Failed-Message">Please take some time to study and try again later!</p>
+                <div class="Failed-Return-Home">
+                    <!--RETURN TO MAIN PAGE-->
+                    <button class="Return-Home-Button-2">Return to Main Page</button>
+                </div>
+            </div>
+                
+            <!--LEADERBOARD-->
+            <div class="Leaderboard-Section">
+                <h3 class="Leaderboard">Leaderboard</h3>
+                <!--DISPLAY TOP 10 HIGH SCORES-->
+                <ol class="High-Scores"></ol>
+                <!--BUTTON TO CLEAR HIGH SCORES-->
+                <button class="Clear-Scores-Button">Clear Scores</button>
+            </div>
+        </div>
+
+        <!--LINK JAVASCRIPT FILE-->
+        <script src="script.js"></script>
+    </body>
+</html>
