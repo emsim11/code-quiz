@@ -23,31 +23,33 @@ THEN I can save my initials and my score.
 
 ## Files
 
-(Link to Deployed Application)[link-url]
+[Deployed Application](https://emsim11.github.io/code-quiz/)
 
-(Link to Repo)[repo-url]
+[Coding Quiz Repository](https://github.com/emsim11/code-quiz)
 
 ## Description
 
 In this Challege, I implement what I have learned in class about Web APIs in order to create a timed coding quiz with multiple-choice questions. Given that it is likely I will be asked in the future to complete a coding assessment - perhaps as part of an interview process - it is important to become familiar with these tests. I have utilized JavaScript and Web APIs to create the interactive features of the quiz, including the questions and answers, the timer, and the high scores. I have utilized HTML and CSS to create a clean, polished, and responsive user interface. I have based my multiple-choice questions on JavaScript information I have learned in the boot camp.
 
-## Visuals (Need to Complete)
+## Visuals
 
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Below you will find a gif video that I have created, which displays my Coding Quiz. The first visual displays the main page that appears when the web application URL is deployed. The next visual shows how a question page appears within the quiz. The third visual displays the finished page, which allows the quiz-taker to input their initials and save their score to the Leaderboard. Please note that if you run out of time BEFORE ALL QUESTIONS ARE ANSWERED, a different page will display that says "Better luck next time!" You will NOT be able to enter your initials and submit your score to the Leaderboard if time runs out before all questions are answered.
 
-![Image Name](/file/path-name.png)
+![Code Quiz Demo](code-quiz-demo.gif)
 
-## Installation (Need to Complete)
+## Installation
 
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection. Include what software programs were used to complete the web application.
+No installation required!
 
-## Usage (Need to Complete)
+## Usage
 
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README. Provide instructions and examples for use.
+Use this Coding Quiz as a way to asses your basic knowledge about JavaScript! It has a user-friendly display, and informs you whether or not you answered the question correctly by displaying either "✔️" or "𝑥" below the answer choices. To begin the game, click the "START" button. Advance through the quiz by selecting the answer choice which you believe to be the correct one. Once all ten questions have been answered, please feel free to add your score to the Leaderboard by inputting your initials and clicking the "Submit Score" button! Please **note** that the option to enter your initials to submit your score to the leaderboard will only be available **if you complete all ten questions before time runs out!**
 
 ## Authors and Acknowledgment
 
 Main Contributor: Emily A. Simone
+
+CSS Styling Inspiration: Thank you [twqueen](https://github.com/twqueen)!
 
 ## License
 
