@@ -100,6 +100,12 @@ StartQuiz.addEventListener("click", function() {
     StartTimer();
     NextQuestion(0);
 });
+StartQuiz.addEventListener("mouseover", function(event) {
+    event.target.style.backgroundColor = "pink";
+});
+StartQuiz.addEventListener("mouseleave", function(event) {
+    event.target.style.backgroundColor = "white";
+});
 
 // 5. Function For NextQuestion(), Remove Previous Answer Choices From Display, Set Quiz to Finish Once All 10 Questions Are Answered, Set Quiz to Show Next Question and Answer Choices If All Questions Haven't Been Answered Yet
 function NextQuestion(index) {
@@ -229,6 +235,12 @@ UserScores.addEventListener("click",function(event) {
     SaveScore();
     RenderScore();
 });
+UserScores.addEventListener("mouseover",function(event) {
+    event.target.style.backgroundColor = "pink";
+});
+UserScores.addEventListener("mouseleave", function(event) {
+    event.target.style.backgroundColor = "white";
+});
 
 // 10. Clear Scores Button (Event Listeners For Click, Mouseover, Mouseleave)
 ClearScores.addEventListener("click",function(event) {
@@ -237,28 +249,34 @@ ClearScores.addEventListener("click",function(event) {
     ScoreList = [];
     RenderScore();
 });
+ClearScores.addEventListener("mouseover",function(event) {
+    event.target.style.backgroundColor = "pink";
+});
+ClearScores.addEventListener("mouseleave", function(event) {
+    event.target.style.backgroundColor = "white";
+});
 
 // 11. Function For Finished Quiz Return To Main Page Button, Event Listener For Click, Mouseover, Mouseleave
-ReturnToMainFinished.addEventListener("click",function() {
-    RTM();
+ReturnToMainFinished.addEventListener("click", ReturnToMain);
+ReturnToMainFinished.addEventListener("mouseover",function(event) {
+    event.target.style.backgroundColor = "pink";
+});
+ReturnToMainFinished.addEventListener("mouseleave", function(event) {
+    event.target.style.backgroundColor = "white";
 });
 
 function ReturnToMain() {
-    MainPage.removeAttribute("hidden");
-    QuizFail.style.display = "none";
-    QuizFinish.style.display = "none";
-    SecondsLeft = 120;
-    TimerVariable.textContent = SecondsLeft;
-    Finish = false;
-    UserScores.disabled = false;
-    AnswerIndicator.textContent = "";
+    window.location.reload();
 };
 
 // 12. Function For Failed Quiz Return To Main Page Button, Event Listener For Click, Mouseover, Mouseleave
-ReturnToMainFailed.addEventListener("click",function() {
-    ReturnToMain();
+ReturnToMainFailed.addEventListener("click", ReturnToMain);
+ReturnToMainFailed.addEventListener("mouseover",function(event) {
+    event.target.style.backgroundColor = "pink";
 });
-// 13. Submit Score Button (Event Listeners For Click, Mouseover, Mouseleave)
+ReturnToMainFailed.addEventListener("mouseleave", function(event) {
+    event.target.style.backgroundColor = "white";
+});
 
 
 
