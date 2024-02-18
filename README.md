@@ -35,7 +35,7 @@ In this Challege, I implement what I have learned in class about Web APIs in ord
 
 Below you will find a gif video that I have created, which displays my Coding Quiz. The first visual displays the main page that appears when the web application URL is deployed. The next visual shows how a question page appears within the quiz. The third visual displays the finished page, which allows the quiz-taker to input their initials and save their score to the Leaderboard. Please note that if you run out of time BEFORE ALL QUESTIONS ARE ANSWERED, a different page will display that says "Better luck next time!" You will NOT be able to enter your initials and submit your score to the Leaderboard if time runs out before all questions are answered.
 
-![Code Quiz Demo](code-quiz-demo.gif)
+![Code Quiz Demo](code-quiz-iPhone-demo.gif)
 
 ## Installation
 
